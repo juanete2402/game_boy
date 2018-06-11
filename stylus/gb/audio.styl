@@ -1,0 +1,18 @@
+// audio salida
+.audio
+	$pos_shadow = -1.25em
+	$col_shadow = alpha($negro, .1)
+	position absolute
+	bottom 3.25em
+	right 1.75em
+	width .5em
+	height 3.5em
+	background-color $col_shadow
+	transform rotate(-25deg)
+	border-radius 1em
+	z-index 2
+	box-shadow 	$pos_shadow*1 0 0 0 $col_shadow,
+					$pos_shadow*2 0 0 0 $col_shadow,
+					$pos_shadow*3 0 0 0 $col_shadow,
+					$pos_shadow*4 0 0 0 $col_shadow,
+					$pos_shadow*5 0 0 0 $col_shadow

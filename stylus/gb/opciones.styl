@@ -1,0 +1,30 @@
+// opciones: select y start
+.opciones
+	position absolute
+	bottom 5em
+	left 6.5em
+	.boton
+		transform rotate(-25deg)
+		width 3.25em
+		border-radius 1em
+		height .8em
+		background-color lighten(black, 30)
+		float left
+		border .35em solid $plomo2
+		position relative
+		&:before
+			position absolute
+			top 150%
+			left 50%
+			transform translateX(-50%)
+			color lighten(black, 40)
+			text-transform uppercase
+			font-weight bold
+			font-size .7em
+		&:first-child
+			margin-right .5em
+			&:before
+				content 'Select'
+		&:last-child
+			&:before
+				content 'Start'
