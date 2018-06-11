@@ -33,3 +33,22 @@ body
 		width 11em
 		height 3.5em
 		transform rotate(-25deg)
+		
+// animaciones
+.bateria
+	animation anim_bateria 2s ease-in-out infinite
+@keyframes anim_bateria
+	0%, 100%
+		background-color $c_bateria
+		box-shadow none
+	50%
+		box-shadow 0 0 10px 5px alpha(lighten($c_bateria, 20), .3)
+		background-color lighten($c_bateria, 20)
+		
+.gb
+	animation anim_gb 3s ease-in infinite
+@keyframes anim_gb
+	0%, 100%
+		transform translate(-50%, -50%)
+	50%
+		transform translate(-50%, -50%) rotate(6deg)
